@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main form</title>
+        <link rel="stylesheet" href="./style.CSS">
+    </head>
+    <body>
+        <div class="cont">
+            <h1> Contact Us</h1>
+            <div style="display: flex; gap: 20%; "><p class="name" id="n1">First Name*</p><br> <p class="name" id="n2">Last Name*</p></div>
+            <div style="display: flex; gap: 7px;">
+                
+            <input type="text" class="in">
+            
+            <input type="text" class="in">
+            </div>
+            <p class="name" >Email Address</p>
+            <input type="email" name="email" id="" class="in" style="width: 100%;">
+            <p class="name">Query Type</p>
+            <div style="display: flex; gap: 10px;"> 
+                  <div style="display: flex; gap: 5px; width: 100%; " class="in">
+                    <input type="radio" name="query"  id="" >
+                    <label for="query" style="color: rgb(167, 167, 167); font-size: medium;"> General Enquiry</label>
+                </div>
+                <div style="display: flex; gap: 5px; width: 100%;" class="in" >
+                    <input type="radio" name="query">
+                    <label for="query" style="color: rgb(168, 167, 167);">Support Request</label>
+                </div>
+                
+            </div>
+     
+        <p class="name">Message</p>
+        <textarea class="me"></textarea>
+        <p class="sent"><input type="checkbox" name="" id="" class="con"> I consent to being contacted by the team</p>
+        <input type="submit" value="Submit" class="sub">
+
+        
+        
+        </div>
+    </body>
+</html>

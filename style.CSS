@@ -1,0 +1,55 @@
+body{
+    background-color: hsl(148, 38%, 91%)
+}
+.cont{
+    margin: 50px auto;
+    padding: 20px ;
+    width: 50%;
+    height: 85%;
+    border-radius: 15px;
+    background-color: white;
+}
+h1{
+    text-align: left;
+    font-family: sans-serif;
+    color: rgb(75, 72, 72);
+    font-size: x-large;
+}
+.name{
+    font-family: sans-serif;
+    font-size: smaller;
+    color: hsl(187, 24%, 22%)
+}
+.in{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    height: 30px;
+    width: 50%;
+}
+.sub{
+    width: 100%;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    border: none;
+}
+.me{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+.con{
+    border: 1px solid hsl(186, 15%, 59%);
+}
+.sent{
+    font-family: sans-serif;
+    font-size: small;
+    color: hsl(188, 7%, 22%);
+}
+.sub:hover{
+    cursor: pointer;
+    background-color: hsl(169, 84%, 15%)
+    
+}
