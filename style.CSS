@@ -1,55 +1,126 @@
-body{
-    background-color: hsl(148, 38%, 91%)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.cont{
-    margin: 50px auto;
-    padding: 20px ;
-    width: 50%;
-    height: 85%;
-    border-radius: 15px;
-    background-color: white;
+@font-face {
+  font-family: lite;
+  src: url(/assets/fonts/static/Karla-Regular.ttf);
 }
-h1{
-    text-align: left;
-    font-family: sans-serif;
-    color: rgb(75, 72, 72);
-    font-size: x-large;
+body {
+  font-family: lite;
+  background-color: hsl(148, 38%, 91%);
 }
-.name{
-    font-family: sans-serif;
-    font-size: smaller;
-    color: hsl(187, 24%, 22%)
+.cont {
+  margin: 50px auto;
+  padding: 20px;
+  width: 50%;
+  height: 85%;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.in{
-    border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
-    height: 30px;
-    width: 50%;
+h1 {
+  text-align: left;
+  font-family: sans-serif;
+  color: rgb(75, 72, 72);
+  font-size: x-large;
 }
-.sub{
-    width: 100%;
-    background-color: hsl(169, 82%, 27%);
-    border-radius: 5px;
-    height: 30px;
-    color: white;
-    border: none;
+.name {
+  font-family: sans-serif;
+  font-size: smaller;
+  color: hsl(187, 24%, 22%);
 }
-.me{
-    border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
-    height: 50px;
-    width: 100%;
+#preloader {
+  background-color: black;
+  height: 110vh;
+  display: flex;
+  margin-top: -10vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 8;
 }
-.con{
-    border: 1px solid hsl(186, 15%, 59%);
+#loader {
+  border: 5px solid white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-top: 5px solid transparent;
+  animation: spin 1s linear infinite;
 }
-.sent{
-    font-family: sans-serif;
-    font-size: small;
-    color: hsl(188, 7%, 22%);
+#form-preloader {
+  background-color: hsla(0, 0%, 0%, 0.7);
+  height: 110vh;
+  top: 0;
+  /* margin-top: -10vh; */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  width: 100%;
 }
-.sub:hover{
-    cursor: pointer;
-    background-color: hsl(169, 84%, 15%)
-    
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.in {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  height: 30px;
+  /* background-color: red; */
+  /* width: 50%; */
+}
+input,
+textarea {
+  /* width: 90%; */
+  padding: 10px 0px 10px 10px;
+}
+.sub {
+  width: 100%;
+  background-color: hsl(169, 82%, 27%);
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  border: none;
+}
+.me {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+}
+.con {
+  border: 1px solid hsl(186, 15%, 59%);
+}
+.sent {
+  font-family: sans-serif;
+  font-size: small;
+  color: hsl(188, 7%, 22%);
+}
+.sub:hover {
+  cursor: pointer;
+  background-color: hsl(169, 84%, 15%);
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .cont {
+    width: 90%;
+  }
+  .attribution {
+    width: 90%;
+  }
 }
